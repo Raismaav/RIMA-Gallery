@@ -8,7 +8,7 @@
 import SwiftUI
 
 class GalleryViewModel: ObservableObject {
-    @Published var items: [GalleryItem] = (1...53).map { GalleryItem(imageName: "Image\($0)") }
+    @Published var items: [GalleryItem] = (1...20).map { GalleryItem(imageName: "Image\($0)") }
     @Published var numberOfColumns: Int = 3
     @Published var isFilled: Bool = true
     @Published var selectedImage: String? = nil
